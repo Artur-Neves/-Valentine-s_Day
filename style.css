@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+:root{
+    --primary-color: #FFF3C7;
+    --secundary-color: #F1E5D1;
+    --terciary-color: #FC819E;
+    --quartyary-color: #FEC7B4;
+    --font-family: "Source Serif 4", serif;
+}
+body{
+    background-color: var(--secundary-color);
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.conteiner{
+    background-color: var(--primary-color);
+    height: auto;
+    width: clamp(300px, 60%, 500px);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1px;
+    border-radius: 20px;
+   
+}
+.conteiner-title{
+    size: 2rem;
+    font-family: var(--font-family);
+    font-weight: 600;
+    padding: 4px;
+}
+.conteiner-question{
+    height: 65px;
+    width: auto;
+    background-color: var(--quartyary-color);
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.verdadeiro{
+    background-color: green;
+}
+.falso{
+    background-color: red;
+}
+a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+.conteiner-question:hover{
+    height: 70px;
+    width: 95%;
+    
+}
+.container-group-questions{
+    padding-left: 20px;
+    padding-right: 40px;
+    margin-bottom: 20px;
+   text-align: center;
+   display: grid;
+   columns: 2;
+   grid-template-columns: 50% 50%;
+   column-gap: 20px;
+   row-gap: 20px;
+}
+.question-word{
+    text-align: start;
+    align-content: start;
+    width: 35%;
+}
+#botao-fujao{
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    left: 40vw;
+     top:45vh;
+}
+.we-img{
+    width:  50%;
+   
+}
+h1{
+    padding: 4px;
+}
+.texto-certificado{
+    font-size: 1.3rem;
+    padding: 10px;
+    text-align: justify;
+    font-family: var(--font-family);
+}
+@media  screen and (max-width: 768px)  {
+    .container-group-questions{
+        text-align: center;
+       display: grid;
+       grid-template-columns: 100%;
+       padding-right: 20px;
+    } 
+}
